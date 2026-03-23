@@ -68,32 +68,32 @@
         </div>
 
         <div class="buttons grid grid-cols-3 gap-x-3 gap-y-5 mt-8">
-            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5">
+            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5" onclick="showOnly('add-money')">
                 <img src="assets/opt-1.png" alt="Add-Money">
                 <p>Add Money</p>
             </button>
 
-            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5">
+            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5" onclick="showOnly('cashout')">
                 <img src="assets/opt-2.png" alt="Cashout">
                 <p>Cashout</p>
             </button>
 
-            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5">
+            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5" onclick="showOnly('send-money')">
                 <img src="assets/opt-3.png" alt="Transfer Money">
                 <p>Transfer Money</p>
             </button>
 
-            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5">
+            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5" onclick="showOnly('get-bonus')">
                 <img src="assets/opt-4.png" alt="Get Bonus">
                 <p>Get Bonus</p>
             </button>
 
-            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5">
+            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5" onclick="showOnly('pay-bill')">
                 <img src="assets/opt-5.png" alt="Pay Bill">
                 <p>Pay Bill</p>
             </button>
 
-            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5">
+            <button class="btn btn-primary rounded-xl btn-soft flex-col h-full p-5" onclick="showOnly('history-container')">
                 <img src="assets/opt-6.png" alt="Transactions">
                 <p>Transactions</p>
             </button>
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <section id="add-money" class="w-11/12 mx-auto py-10">
+    <section id="add-money" class="w-11/12 mx-auto py-10 toggles">
         <h2 class="font-bold text-2xl mb-5">Add Money</h2>
 
         <div class="login mt-10">
@@ -143,7 +143,7 @@
 
     </section>
 
-    <section id="cashout" class="w-11/12 mx-auto py-10">
+    <section id="cashout" class="w-11/12 mx-auto py-10 hidden toggles">
         <h2 class="font-bold text-2xl mb-5">Cashout</h2>
 
         <div class="cashout-form mt-10">
@@ -170,7 +170,7 @@
 
     </section>
 
-    <section id="send-money" class="w-11/12 mx-auto py-10">
+    <section id="send-money" class="w-11/12 mx-auto py-10 hidden toggles">
         <h2 class="font-bold text-2xl mb-5">Transfer Money</h2>
 
         <div class="send-money-form mt-10">
@@ -197,7 +197,7 @@
 
     </section>
 
-    <section id="get-bonus" class="w-11/12 mx-auto py-10">
+    <section id="get-bonus" class="w-11/12 mx-auto py-10 hidden toggles">
         <h2 class="font-bold text-2xl mb-5">Get Bonus</h2>
 
         <div class="get-bonus-form mt-10">
@@ -216,7 +216,7 @@
 
     </section>
 
-    <section id="pay-bill" class="w-11/12 mx-auto py-10">
+    <section id="pay-bill" class="w-11/12 mx-auto py-10 hidden toggles">
         <h2 class="font-bold text-2xl mb-5">Pay Bill</h2>
 
         <div class="pay-bill-form mt-10">
@@ -250,6 +250,10 @@
                 </div>
             </div>
         </div>
+
+    </section>
+
+    <section id="history-container" class="w-11/12 mx-auto py-10 hidden toggles">
 
     </section>
 

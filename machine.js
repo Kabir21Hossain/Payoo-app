@@ -29,3 +29,15 @@ function updateBalance(amount,isDeposit){
         }
     }
 }
+
+
+// toggling function
+
+function showOnly(id){
+    const allSection=document.querySelectorAll('.toggles');
+    allSection.forEach(section=>{
+        section.classList.add('hidden');
+    });
+    document.getElementById(id).classList.remove('hidden');
+
+}
