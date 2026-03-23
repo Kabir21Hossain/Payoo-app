@@ -5,7 +5,7 @@ function attemptLogin(){
     if (number==='01234567890' && pin==='1234'){
         alert('login successful');
         // window.location.href='home.html';
-        window.location.assign('/home.html');
+        window.location.assign('home.html');
         //window.location.replace('/home.html');
     }
     else{
