@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisy ui + tailwindcss -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font outfit -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="flex justify-between w-full p-4 shadow-xl rounded-lg border-2 border-gray-300">
+
+
+
+
+
+        <script>
+            const container = document.getElementById('history-container');
+            const div = document.createElement('div');
+            div.classList.add('card', 'bg-base-300', 'p-5', 'shadow-xl', 'rounded-lg', 'my-4', 'border', 'border-gray-300', 'flex', 'justify-between', 'items-center');
+            div.innerHTML = `
+        <div class="left gap-5 flex items-center">
+            <img src="assets/opt-1.png" alt="" class="w-10 h-10 rounded-full">
+            <div class='space-y-3'>
+                <p class='font-bold'>${bankName}</p>
+                <p class='text-neutral/50'>${account}</p>
+                <p class='font-bold text-primary'>+$${amount}</p>
+                <p class='text-neutral/50'>${new Date().toLocaleString()}</p>
+            </div>
+
+        </div>
+
+        <div class='right'>
+            <i class="fa-solid fa-ellipsis rotate-90"></i>
+        </div>
+
+
+    </div>
+            container.appendChild(div);
+        </script>
+</body>
+
+</html>
